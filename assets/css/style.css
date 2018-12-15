@@ -74,7 +74,7 @@ body {
     border-bottom: 5px solid #cccccc;
     padding: 20px;
     color: #4aaaa5;
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     margin-bottom: 20px;
@@ -97,10 +97,14 @@ body {
   }
 
   p {
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
     margin-right: 20px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  }
+
+  div#me {
+    width: 1200px;
   }
   
   #main-bio,
@@ -300,7 +304,7 @@ button {
 /* media inquiries */
 
 @media screen and (max-width:980px) {
-  div#mine, div.form-group {
+  div#mine, div.form-group, div#me {
     width: 600px;
   }
 
@@ -308,14 +312,22 @@ button {
     width: 500px;
   }
 
- 
+  p {
+    font-size: 10px;
+    line-height: 15px;
+    width: 500px;
+  }
+
+  h2 {
+    width: 70%;
+  }
 
 
 }
 
 
 @media screen and (max-width:768px) {
-  div#mine, div.form-group {
+  div#mine, div.form-group, div#me {
     width: 400px;
   }
 
@@ -323,13 +335,38 @@ button {
     width: 300px;
   }
 
+  p {
+    font-size: 10px;
+  }
+
+  h2 {
+    width: 70%;
+  }
+  
+  img#bio-image {
+    width: 100px;
+    height: 100px;
+   
+  }
+
+  p {
+    font-size: 8px;
+    line-height: 20px;
+    width: 350px;
+    margin-top: -20px;
+  }
+
+  a {
+    margin-right: 200px;
+    margin-left: -200px;
+  }
   
   
 }
 
 
 @media screen and (max-width:640px) {
-  div#mine, div.form-group {
+  div#mine, div.form-group, div#me {
     width: 300px;
     margin-left: 100px;
   }
@@ -348,6 +385,28 @@ h3 {
   nav {
     margin-left: 300px;
     margin-right: -100px;
+  }
+
+  p {
+    font-size: 8px;
+    line-height: 20px;
+    width: 270px;
+    margin-top: -20px;
+  }
+
+  img#bio-image {
+    width: 100px;
+    height: 100px;
+   
+  }
+
+  h2 {
+    width: 70%;
+  }
+
+  a {
+    margin-right: 200px;
+    margin-left: -170px;
   }
 
 }
